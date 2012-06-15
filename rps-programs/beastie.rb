@@ -1,3 +1,0 @@
-require 'highline/import'
-
-input = '
