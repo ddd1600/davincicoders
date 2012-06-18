@@ -1,18 +1,13 @@
 require 'highline/import'
 
-<<<<<<< HEAD
 class Discography
 
 def initialize
   @beastie = {
-=======
-beastie = {
->>>>>>> cc5b52079e9722040e9192cef494e8dd37439955
   "1986" => "Licensed to Ill", "1989" => "Paul", "1992" => "Check Your Head",
   "1993" => "Ill Communication", "1998" => "Hello Nasty",
   "2004" => "To the 5 Boroughs", "2007" => "The Mix-Up",
   "2011" => "Hot Sauce Committee Part Two", "1994" => "Some Old Bullshit",
-<<<<<<< HEAD
   "1996" => "The In Sound From Way Out!",
   "1999" => "Beastie Boys Anthology: The Sounds of Science",
   "2005" => "Solid Gold Hits"
@@ -80,7 +75,6 @@ elsif input=="albums" or input=="all"
        puts thatyear
        puts ""
        i += 1
->>>>>>> cc5b52079e9722040e9192cef494e8dd37439955
        end
   else
   puts "Invalid parameters, try '1986'"
@@ -91,7 +85,6 @@ end
 #using the key array (years) used above, later I'll use the key (string)
 #to "summon" it's corresponding value back in the hash
 
-<<<<<<< HEAD
 year_index = @years.find_index(@input)
 loop do
   break if @continue=="albums"
@@ -115,7 +108,7 @@ d = Discography.new
 d.sortAndIndex
 d.ask
 d.mainProgram
-=======
+
 year_index = years.find_index(input)
 loop do
   continue = ask("Type 'next' to see the next album")
@@ -127,4 +120,3 @@ loop do
   puts "#{beastie[next_year]}, #{next_year}"
   puts ""
 end
->>>>>>> cc5b52079e9722040e9192cef494e8dd37439955
